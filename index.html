@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lapis, Papyrus, Scalpellus</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <header>
+            <h1>Lapis, Papyrus, Scalpellus</h1>
+            <h2>The Ancient Roman game otherwise known as Rock, Paper, Scissors</h2>
+            <div class="muteToggle">
+                <img class="unmuteButton" src="https://i.imgur.com/wu38rcw.png">
+                <img class="muteButton" src="https://i.imgur.com/zuTQKkJ.png">
+            </div>
+        </header>
+        <audio class="audioTheme" loop>
+            <source src="Sounds/LISA The Painful OST - Devil's Bath Boys.mp3">
+        </audio>
+        <audio id="rockWin">
+            <source src="Sounds/Stone Slide Sound Effects.mp3">
+        </audio>
+        <audio id="paperWin">
+            <source src="Sounds/Paper Sound Effect.mp3">
+        </audio>
+        <audio id="scissorsWin">
+            <source src="Sounds/Knife Pull Swing - Sound Effect for editing.mp3">
+        </audio>
+        <div class="rps">
+            <p>Make your choice below!</p>
+            <div class="flex">
+                <div class="hideRock">
+                    <img id="rock" src="https://i.imgur.com/jrhUzWU.png">
+                    <p class="rockDisplay">Lapis</p>
+                </div>
+                <div class="hidePaper">
+                    <img id="paper" src="https://i.imgur.com/gNXftXO.png">
+                    <p class="paperDisplay">Papyrus</p>
+                </div>
+                <div class="hideScissors">
+                    <img id="scissors" src="https://i.imgur.com/xYFBZ8N.png">
+                    <p class="scissorsDisplay">Scalpellus</p>
+                </div>
+            </div>
+        </div>
+        <div id="counter">
+            <div id="counterWin">
+                <p>Wins: 0</p>
+            </div>
+            <div id="counterLoss">
+                <p>Losses: 0</p>
+            </div>
+            <div id="counterTie">
+                <p>Ties: 0</p>
+            </div>
+        </div>
+        <div id="results"></div>
+        
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>

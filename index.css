@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Passion+One&display=swap');
+
+body {
+    text-align: center;
+    background: url(https://i.imgur.com/V1HClln.jpg);
+    background-size: cover;
+    font-family: 'Passion One', cursive;
+}
+header {
+    background: rgba(0,0,0,0.6);
+    padding: 5px 5px 15px 5px;
+    margin: 10px 0;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(0,0,0);
+}
+h1 {
+    font-size: 45px;
+}
+h2 {
+    font-size: 35px;
+}
+.rps {
+    margin: 10px 0;
+    background: rgba(0,0,0,0.6);
+    padding: 10px;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(0,0,0);
+    font-size: 25px;
+    height: 300px;
+}
+.flex {
+    display: flex;
+}
+.hideRock, .hidePaper, .hideScissors {
+    display: block;
+    margin: 0 auto;
+}
+#rock, #paper, #scissors {
+    width: 200px;
+    padding: 0 50px;
+    position: relative;
+}
+#rock:hover, #paper:hover, #scissors:hover {
+    filter: brightness(50%);
+}
+.rockDisplay, .paperDisplay, .scissorsDisplay {
+    display: none;
+}
+#rock:hover + .rockDisplay, #paper:hover + .paperDisplay, #scissors:hover + .scissorsDisplay {
+    display: block;
+    position: relative;
+}
+#results {
+    font-size: 28px;
+    text-shadow: 2px 2px 2px rgb(0,0,0);
+    color: white;
+    padding: 1px;
+}
+#counter {
+    background: rgba(0,0,0,0.6);
+    font-size: 28px;
+    color: white;
+    padding: 1px;
+    margin: 10px 0;
+}
+#counterWin, #counterLoss, #counterTie {
+    margin: 0 auto;
+    width: 200px;
+    display: inline-block;
+}
+.muteButton, .unmuteButton {
+    width: 50px;
+    filter:invert();
+    /* position: absolute;
+    top: 20.5%; */
+}
+
+@media (max-width:600px) {
+    body {
+        background-size: contain;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    #rock, #paper, #scissors {
+        width: 90px;
+        padding: 0;
+    }
+    .rps {
+        height: 225px;
+        font-size: 22px;
+    }
+    #counterWin, #counterLoss, #counterTie {
+        width: 100px;
+    }
+    #counter {
+        font-size: 22px;
+    }
+    #results {
+        font-size: 22px;
+    }
+    .muteButton, .unmuteButton {
+        width: 30px;
+    }
+}
